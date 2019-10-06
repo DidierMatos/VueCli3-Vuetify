@@ -6,8 +6,10 @@ import router from './router'
 
 import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.min.css'
-import '@mdi/font/css/materialdesignicons.css'
-Vue.use(Vuetify);
+
+Vue.use(Vuetify, {
+  
+})
 
 Vue.config.productionTip = false
 
@@ -19,3 +21,9 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+/* export default new Vuetify({
+  icons: {
+    iconfont: 'fa'
+  }
+}) */
