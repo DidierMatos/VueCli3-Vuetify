@@ -5,7 +5,7 @@
       app
     >
       <v-list dense>
-        <v-list-item @click="">
+        <v-list-item :to="{name: 'about'}">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>
@@ -13,7 +13,7 @@
             <v-list-item-title>Home</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item @click="">
+        <v-list-item :to="{name: 'table'}">
           <v-list-item-action>
             <v-icon>mdi-contact-mail</v-icon>
           </v-list-item-action>
@@ -26,7 +26,7 @@
 
     <v-app-bar
       app
-      color="indigo"
+      color="primary"
       dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -37,7 +37,7 @@
       <router-view></router-view>
     </v-content>
     <v-footer
-      color="indigo"
+      color="primary"
       app
     >
       <span class="white--text">&copy; 2019</span>
